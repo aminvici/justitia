@@ -1,0 +1,5 @@
+Changes applied in this session:
+- go.mod now depends on github.com/DSiSc/wasm v0.6.0 and pins it via `replace github.com/DSiSc/wasm => ./third_party/wasm`.
+- Added third_party/wasm/ (fork of DSiSc wasm v0.6.0) including its LICENSE and go.mod so the local replace resolves correctly.
+- Regenerated go.sum to record the dependency checksums for the vendored wasm module and existing requirements.
+- Built the project binary at ./justitia after using local module/cache directories to satisfy sandbox limits; temporary caches were removed afterward.
