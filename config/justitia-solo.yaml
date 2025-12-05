@@ -1,0 +1,102 @@
+general:
+  # Solo node for local development.
+  nodeType: 1
+  hashAlgorithm: SHA256
+  apigateway: tcp://0.0.0.0:47768
+
+  node:
+    address: 333c3310824b7c685133f2bedb2ca4b8b4df633d
+
+  # Persist state and blocks locally.
+  repository:
+    plugin: leveldb
+    statepath: ./data/state
+    datapath: ./data/block
+
+  txpool:
+    globalSlots: 4096
+    txsPerBlock: 512
+    txMaxCacheTime: 600
+
+  participates:
+    policy: solo
+
+  role:
+    policy: solo
+
+  consensus:
+    policy: solo
+    enableEmptyBlock: false
+    localSignatureVerify: false
+    syncSignatureVerify: false
+    timeoutToWaitCommit: 60000
+    timeoutToViewChange: 30000
+    timeoutToCollectResponse: 50000
+
+  BlockProducedInterval: 2000
+
+  signature:
+    producer: false
+    txswitch: false
+    blockswitch: false
+
+  p2p:
+    blockSyncer:
+      AddrBookFilePath: ./logs/syncer_address.json
+      ListenAddress: tcp://0.0.0.0:46660
+      MaxConnOutBound: 24
+      MaxConnInBound: 48
+      PersistentPeers:
+      DebugP2P: false
+      DebugServer:
+      DebugAddr:
+      Service: 2
+    block:
+      AddrBookFilePath: ./logs/block_address.json
+      ListenAddress: tcp://0.0.0.0:46661
+      MaxConnOutBound: 24
+      MaxConnInBound: 48
+      PersistentPeers:
+      DebugP2P: false
+      DebugServer:
+      DebugAddr:
+      Service: 1
+    tx:
+      AddrBookFilePath: ./logs/tx_address.json
+      ListenAddress: tcp://0.0.0.0:46662
+      MaxConnOutBound: 24
+      MaxConnInBound: 48
+      PersistentPeers:
+      DebugP2P: false
+      DebugServer:
+      DebugAddr:
+      Service: 0
+
+monitor:
+  prometheus:
+    enabled: true
+    port: 47780
+    maxOpenConnections: 3
+  expvar:
+    enabled: true
+    port: 6060
+    path: /debug/vars
+  pprof:
+    enabled: true
+    port: 6666
+
+logging:
+  timeFieldFormat: "2006-01-02 15:04:05.000"
+  console:
+    enabled: true
+    level: 1
+    format: text
+    caller: true
+    hostname: false
+  file:
+    enabled: true
+    path: ./logs/justitia.log
+    level: 1
+    format: text
+    caller: true
+    hostname: true

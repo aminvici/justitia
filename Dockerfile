@@ -1,9 +1,8 @@
-FROM golang:1.10
+FROM golang:1.25
 
 WORKDIR /go/src/github.com/DSiSc/justitia
 COPY . .
-
-RUN make fetch-deps
+RUN go mod verify
 RUN go install -v ./...
 
 EXPOSE 47768

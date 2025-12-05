@@ -1,0 +1,23 @@
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/gossipswitch@v1.1.0/switch.go:53[0m[36m >[0m [1mNew transaction switch[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/gossipswitch@v1.1.0/switch.go:73[0m[36m >[0m [1mInit switch's ports[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/gossipswitch@v1.1.0/port/port.go:74[0m[36m >[0m [1mBind OutPutFunc to OutPort[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/gossipswitch@v1.1.0/switch.go:56[0m[36m >[0m [1mNew block switch[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/gossipswitch@v1.1.0/switch.go:73[0m[36m >[0m [1mInit switch's ports[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/repository@v1.1.0/repository.go:43[0m[36m >[0m [1mStart initializing block chain[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/blockstore@v1.1.0/block_store.go:48[0m[36m >[0m [1mStart creating block store, with config: &{memorydb } [0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/blockstore@v1.1.0/block_store.go:79[0m[36m >[0m [1mStart loading block from database[0m
+[90m3:21AM[0m [33mWRN[0m [1m../../../../pkg/mod/github.com/!d!si!sc/blockstore@v1.1.0/block_store.go:82[0m[36m >[0m [1mFailed to load latest block hash from database, we will set current block to nil[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/repository@v1.1.0/repository.go:109[0m[36m >[0m [1mThere are no blocks in block store, create block chain with init state[0m
+[90m3:21AM[0m [32mINF[0m [1mconfig/genesis.go:63[0m[36m >[0m [1mBuild genesis block from genesis file: /root/go/src/github.com/DSiSc/justitia/config/genesis.json[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/repository@v1.1.0/repository.go:170[0m[36m >[0m [1mStart Writing block: 7a09615cd551e1efbf0ee7b34a20d863f9da40aa0ddcb1ab95865389a4ce20b1, height: 0[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/repository@v1.1.0/repository.go:386[0m[36m >[0m [1mStart committing statedb state to database[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/repository@v1.1.0/repository.go:182[0m[36m >[0m [1mCommit state 533960a7db0dd8fa5f6ddeeadda8a4b96a53630b3d913dec7772b6dd9117db43 to database, current block height: 0[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/blockstore@v1.1.0/block_store.go:118[0m[36m >[0m [1mStart writing block 7a09615cd551e1efbf0ee7b34a20d863f9da40aa0ddcb1ab95865389a4ce20b1 to database.[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/blockstore@v1.1.0/block_store.go:341[0m[36m >[0m [1mUpdate current block to 7a09615cd551e1efbf0ee7b34a20d863f9da40aa0ddcb1ab95865389a4ce20b1[0m
+[90m3:21AM[0m [32mINF[0m [1mtools/events/event.go:69[0m[36m >[0m [1mReceive eventType is [5].[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/repository@v1.1.0/repository.go:207[0m[36m >[0m [1mWrite block 7a09615cd551e1efbf0ee7b34a20d863f9da40aa0ddcb1ab95865389a4ce20b1 height 0 successfully[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/galaxy@v1.1.0/participates/participates.go:24[0m[36m >[0m [1mGet participates policy is solo.[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/galaxy@v1.1.0/role/role.go:26[0m[36m >[0m [1mGet role policy is solo.[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/galaxy@v1.1.0/consensus/consensus.go:31[0m[36m >[0m [1mGet consensus policy is solo.[0m
+[90m3:21AM[0m [32mINF[0m [1m../../../../pkg/mod/github.com/!d!si!sc/apigateway@v1.1.0/rpc/lib/server/http_server.go:52[0m[36m >[0m [1mStarting RPC HTTP server on tcp://0.0.0.0:47768[0m
+[90m3:21AM[0m [31mFTL[0m [1mmain.go:55[0m[36m >[0m [1mFatal error occur: Rpc start failed with Failed to listen on tcp://0.0.0.0:47768: listen tcp 0.0.0.0:47768: bind: address already in use..[0m

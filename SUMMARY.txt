@@ -1,0 +1,2 @@
+Primary Justitia blockchain project bundling governance vision, setup instructions, and links to component modules.
+Docs cover dev environment setup, config bootstrap, running the node, and references to subprojects like consensus, storage, txpool, and wallet.
